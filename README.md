@@ -30,8 +30,9 @@ Finalize by calling plt.show() to display all images in a single figure for easy
  
 ## Program:
 
-``` Python
+
 ### Import the necessary packages
+
 ```
 import cv2
 import numpy as np
@@ -52,7 +53,7 @@ cv2.putText(image, text, (50, 150), font, 2, (255, 255, 255), 3)
 ```
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
 
-``
+```
 
 ### Original image
 
