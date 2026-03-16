@@ -38,7 +38,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 image = np.zeros((500, 500, 3), dtype="uint8")
 ```
+
 ### Create the Text using cv2.putText
+
 ```
 text = "JANANI SENTHILKUMAR"
 font = cv2.FONT_HERSHEY_SIMPLEX
@@ -53,6 +55,7 @@ kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
 ``
 
 ### Original image
+
 ```
 
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -62,6 +65,7 @@ plt.axis("off")
 ```
 
 ### Erode the image
+
 ```
 eroded_image = cv2.erode(image, kernel, iterations=1)
 eroded_image_rgb = cv2.cvtColor(eroded_image, cv2.COLOR_BGR2RGB)
@@ -71,6 +75,7 @@ plt.axis("off")
 ```
 
 ### Dilate the image
+
 ```
 dilated_image = cv2.dilate(image, kernel, iterations=1)
 dilated_image_rgb = cv2.cvtColor(dilated_image, cv2.COLOR_BGR2RGB)
